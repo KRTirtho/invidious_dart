@@ -1,0 +1,18 @@
+name: invidious
+description: A starting point for Dart libraries or applications.
+version: 0.1.0
+
+environment:
+  sdk: ^3.5.3
+
+dependencies:
+  json_annotation: ^4.9.0
+  freezed_annotation: ^2.4.4
+  dio: ^5.7.0
+
+dev_dependencies:
+  build_runner: ^2.4.13
+  freezed: ^2.5.7
+  json_serializable: ^6.8.0
+  lints: ^4.0.0
+  test: ^1.24.0
