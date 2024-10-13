@@ -1,5 +1,5 @@
 name: invidious
-description: A starting point for Dart libraries or applications.
+description: Invidious API client for Dart and Flutter.
 version: 0.1.0
 
 environment:
