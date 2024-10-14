@@ -6,6 +6,8 @@ void main() async {
   final invidious = InvidiousClient(server: 'https://inv.nadeko.net');
   final pretty = JsonEncoder.withIndent(' ');
 
+  print((await invidious.instances()).map(pretty.convert));
+
   print((await invidious.browse.popular()).map(pretty.convert));
   print((await invidious.browse.trending()).map(pretty.convert));
 

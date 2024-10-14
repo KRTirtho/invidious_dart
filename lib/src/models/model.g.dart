@@ -329,6 +329,215 @@ Map<String, dynamic> _$$InvidiousCommentResponseRepliesImplToJson(
       'continuation': instance.continuation,
     };
 
+_$InvidiousInstanceResponseImpl _$$InvidiousInstanceResponseImplFromJson(
+        Map<String, dynamic> json) =>
+    _$InvidiousInstanceResponseImpl(
+      name: json['name'] as String,
+      details: InvidiousInstanceDetails.fromJson(
+          json['details'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$InvidiousInstanceResponseImplToJson(
+        _$InvidiousInstanceResponseImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'details': instance.details,
+    };
+
+_$InvidiousInstanceDetailsImpl _$$InvidiousInstanceDetailsImplFromJson(
+        Map<String, dynamic> json) =>
+    _$InvidiousInstanceDetailsImpl(
+      flag: json['flag'] as String,
+      region: json['region'] as String,
+      stats: json['stats'] == null
+          ? null
+          : InvidiousStats.fromJson(json['stats'] as Map<String, dynamic>),
+      cors: json['cors'] as bool?,
+      api: json['api'] as bool?,
+      type: json['type'] as String,
+      uri: json['uri'] as String,
+      monitor: json['monitor'] == null
+          ? null
+          : InvidiousMonitor.fromJson(json['monitor'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$InvidiousInstanceDetailsImplToJson(
+        _$InvidiousInstanceDetailsImpl instance) =>
+    <String, dynamic>{
+      'flag': instance.flag,
+      'region': instance.region,
+      'stats': instance.stats,
+      'cors': instance.cors,
+      'api': instance.api,
+      'type': instance.type,
+      'uri': instance.uri,
+      'monitor': instance.monitor,
+    };
+
+_$InvidiousStatsImpl _$$InvidiousStatsImplFromJson(Map<String, dynamic> json) =>
+    _$InvidiousStatsImpl(
+      version: json['version'] as String,
+      software:
+          InvidiousSoftware.fromJson(json['software'] as Map<String, dynamic>),
+      openRegistrations: json['openRegistrations'] as bool,
+      usage: InvidiousUsage.fromJson(json['usage'] as Map<String, dynamic>),
+      metadata:
+          InvidiousMetadata.fromJson(json['metadata'] as Map<String, dynamic>),
+      playback:
+          InvidiousPlayback.fromJson(json['playback'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$InvidiousStatsImplToJson(
+        _$InvidiousStatsImpl instance) =>
+    <String, dynamic>{
+      'version': instance.version,
+      'software': instance.software,
+      'openRegistrations': instance.openRegistrations,
+      'usage': instance.usage,
+      'metadata': instance.metadata,
+      'playback': instance.playback,
+    };
+
+_$InvidiousSoftwareImpl _$$InvidiousSoftwareImplFromJson(
+        Map<String, dynamic> json) =>
+    _$InvidiousSoftwareImpl(
+      name: json['name'] as String,
+      version: json['version'] as String,
+      branch: json['branch'] as String,
+    );
+
+Map<String, dynamic> _$$InvidiousSoftwareImplToJson(
+        _$InvidiousSoftwareImpl instance) =>
+    <String, dynamic>{
+      'name': instance.name,
+      'version': instance.version,
+      'branch': instance.branch,
+    };
+
+_$InvidiousUsageImpl _$$InvidiousUsageImplFromJson(Map<String, dynamic> json) =>
+    _$InvidiousUsageImpl(
+      users: InvidiousUsers.fromJson(json['users'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$InvidiousUsageImplToJson(
+        _$InvidiousUsageImpl instance) =>
+    <String, dynamic>{
+      'users': instance.users,
+    };
+
+_$InvidiousUsersImpl _$$InvidiousUsersImplFromJson(Map<String, dynamic> json) =>
+    _$InvidiousUsersImpl(
+      total: (json['total'] as num).toInt(),
+      activeHalfyear: (json['activeHalfyear'] as num).toInt(),
+      activeMonth: (json['activeMonth'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$InvidiousUsersImplToJson(
+        _$InvidiousUsersImpl instance) =>
+    <String, dynamic>{
+      'total': instance.total,
+      'activeHalfyear': instance.activeHalfyear,
+      'activeMonth': instance.activeMonth,
+    };
+
+_$InvidiousMetadataImpl _$$InvidiousMetadataImplFromJson(
+        Map<String, dynamic> json) =>
+    _$InvidiousMetadataImpl(
+      updatedAt: (json['updatedAt'] as num).toInt(),
+      lastChannelRefreshedAt: (json['lastChannelRefreshedAt'] as num).toInt(),
+    );
+
+Map<String, dynamic> _$$InvidiousMetadataImplToJson(
+        _$InvidiousMetadataImpl instance) =>
+    <String, dynamic>{
+      'updatedAt': instance.updatedAt,
+      'lastChannelRefreshedAt': instance.lastChannelRefreshedAt,
+    };
+
+_$InvidiousPlaybackImpl _$$InvidiousPlaybackImplFromJson(
+        Map<String, dynamic> json) =>
+    _$InvidiousPlaybackImpl();
+
+Map<String, dynamic> _$$InvidiousPlaybackImplToJson(
+        _$InvidiousPlaybackImpl instance) =>
+    <String, dynamic>{};
+
+_$InvidiousMonitorImpl _$$InvidiousMonitorImplFromJson(
+        Map<String, dynamic> json) =>
+    _$InvidiousMonitorImpl(
+      token: json['token'] as String,
+      url: json['url'] as String,
+      alias: json['alias'] as String,
+      lastStatus: (json['last_status'] as num).toInt(),
+      uptime: (json['uptime'] as num).toDouble(),
+      down: json['down'] as bool,
+      downSince: json['down_since'] == null
+          ? null
+          : DateTime.parse(json['down_since'] as String),
+      upSince: DateTime.parse(json['up_since'] as String),
+      error: json['error'] as String?,
+      period: (json['period'] as num).toInt(),
+      apdexT: (json['apdex_t'] as num).toInt(),
+      stringMatch: json['string_match'] as String,
+      enabled: json['enabled'] as bool,
+      published: json['published'] as bool,
+      disabledLocations: (json['disabled_locations'] as List<dynamic>)
+          .map((e) => e as String)
+          .toList(),
+      recipients: (json['recipients'] as List<dynamic>)
+          .map((e) => e as String)
+          .toList(),
+      lastCheckAt: DateTime.parse(json['last_check_at'] as String),
+      nextCheckAt: DateTime.parse(json['next_check_at'] as String),
+      createdAt: DateTime.parse(json['created_at'] as String),
+      muteUntil: json['mute_until'] as String,
+      faviconUrl: json['favicon_url'] as String,
+      ssl: InvidiousSSL.fromJson(json['ssl'] as Map<String, dynamic>),
+    );
+
+Map<String, dynamic> _$$InvidiousMonitorImplToJson(
+        _$InvidiousMonitorImpl instance) =>
+    <String, dynamic>{
+      'token': instance.token,
+      'url': instance.url,
+      'alias': instance.alias,
+      'last_status': instance.lastStatus,
+      'uptime': instance.uptime,
+      'down': instance.down,
+      'down_since': instance.downSince?.toIso8601String(),
+      'up_since': instance.upSince.toIso8601String(),
+      'error': instance.error,
+      'period': instance.period,
+      'apdex_t': instance.apdexT,
+      'string_match': instance.stringMatch,
+      'enabled': instance.enabled,
+      'published': instance.published,
+      'disabled_locations': instance.disabledLocations,
+      'recipients': instance.recipients,
+      'last_check_at': instance.lastCheckAt.toIso8601String(),
+      'next_check_at': instance.nextCheckAt.toIso8601String(),
+      'created_at': instance.createdAt.toIso8601String(),
+      'mute_until': instance.muteUntil,
+      'favicon_url': instance.faviconUrl,
+      'ssl': instance.ssl,
+    };
+
+_$InvidiousSSLImpl _$$InvidiousSSLImplFromJson(Map<String, dynamic> json) =>
+    _$InvidiousSSLImpl(
+      testedAt: DateTime.parse(json['tested_at'] as String),
+      expiresAt: DateTime.parse(json['expires_at'] as String),
+      valid: json['valid'] as bool,
+      error: json['error'] as String?,
+    );
+
+Map<String, dynamic> _$$InvidiousSSLImplToJson(_$InvidiousSSLImpl instance) =>
+    <String, dynamic>{
+      'tested_at': instance.testedAt.toIso8601String(),
+      'expires_at': instance.expiresAt.toIso8601String(),
+      'valid': instance.valid,
+      'error': instance.error,
+    };
+
 _$InvidiousMixResponseImpl _$$InvidiousMixResponseImplFromJson(
         Map<String, dynamic> json) =>
     _$InvidiousMixResponseImpl(

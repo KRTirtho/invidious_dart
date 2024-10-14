@@ -3,6 +3,7 @@ import 'package:invidious/src/endpoints/annotations.dart';
 import 'package:invidious/src/endpoints/browse.dart';
 import 'package:invidious/src/endpoints/clips.dart';
 import 'package:invidious/src/endpoints/endpoint.dart';
+import 'package:invidious/src/endpoints/instances.dart';
 import 'package:invidious/src/endpoints/mixes.dart';
 import 'package:invidious/src/endpoints/playlist.dart';
 import 'package:invidious/src/endpoints/resolve.dart';
@@ -12,6 +13,7 @@ import 'package:invidious/src/endpoints/video.dart';
 
 class InvidiousClient extends RootEndpoint
     with
+        InstancesEndpoint,
         StatsEndpoint,
         AnnotationsEndpoint,
         ClipsEndpoint,

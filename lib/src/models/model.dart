@@ -14,6 +14,7 @@ part 'objects/video.dart';
 part 'responses/caption.dart';
 part 'responses/clip.dart';
 part 'responses/comment.dart';
+part 'responses/instance.dart';
 part 'responses/mix.dart';
 part 'responses/resolve.dart';
 part 'responses/search.dart';

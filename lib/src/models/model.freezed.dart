@@ -3663,6 +3663,2544 @@ abstract class _InvidiousCommentResponseReplies
       get copyWith => throw _privateConstructorUsedError;
 }
 
+InvidiousInstanceResponse _$InvidiousInstanceResponseFromJson(
+    Map<String, dynamic> json) {
+  return _InvidiousInstanceResponse.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousInstanceResponse {
+  String get name => throw _privateConstructorUsedError;
+  InvidiousInstanceDetails get details => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousInstanceResponse to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousInstanceResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousInstanceResponseCopyWith<InvidiousInstanceResponse> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousInstanceResponseCopyWith<$Res> {
+  factory $InvidiousInstanceResponseCopyWith(InvidiousInstanceResponse value,
+          $Res Function(InvidiousInstanceResponse) then) =
+      _$InvidiousInstanceResponseCopyWithImpl<$Res, InvidiousInstanceResponse>;
+  @useResult
+  $Res call({String name, InvidiousInstanceDetails details});
+
+  $InvidiousInstanceDetailsCopyWith<$Res> get details;
+}
+
+/// @nodoc
+class _$InvidiousInstanceResponseCopyWithImpl<$Res,
+        $Val extends InvidiousInstanceResponse>
+    implements $InvidiousInstanceResponseCopyWith<$Res> {
+  _$InvidiousInstanceResponseCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousInstanceResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? name = null,
+    Object? details = null,
+  }) {
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: null == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as InvidiousInstanceDetails,
+    ) as $Val);
+  }
+
+  /// Create a copy of InvidiousInstanceResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousInstanceDetailsCopyWith<$Res> get details {
+    return $InvidiousInstanceDetailsCopyWith<$Res>(_value.details, (value) {
+      return _then(_value.copyWith(details: value) as $Val);
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousInstanceResponseImplCopyWith<$Res>
+    implements $InvidiousInstanceResponseCopyWith<$Res> {
+  factory _$$InvidiousInstanceResponseImplCopyWith(
+          _$InvidiousInstanceResponseImpl value,
+          $Res Function(_$InvidiousInstanceResponseImpl) then) =
+      __$$InvidiousInstanceResponseImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String name, InvidiousInstanceDetails details});
+
+  @override
+  $InvidiousInstanceDetailsCopyWith<$Res> get details;
+}
+
+/// @nodoc
+class __$$InvidiousInstanceResponseImplCopyWithImpl<$Res>
+    extends _$InvidiousInstanceResponseCopyWithImpl<$Res,
+        _$InvidiousInstanceResponseImpl>
+    implements _$$InvidiousInstanceResponseImplCopyWith<$Res> {
+  __$$InvidiousInstanceResponseImplCopyWithImpl(
+      _$InvidiousInstanceResponseImpl _value,
+      $Res Function(_$InvidiousInstanceResponseImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousInstanceResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? name = null,
+    Object? details = null,
+  }) {
+    return _then(_$InvidiousInstanceResponseImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      details: null == details
+          ? _value.details
+          : details // ignore: cast_nullable_to_non_nullable
+              as InvidiousInstanceDetails,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousInstanceResponseImpl implements _InvidiousInstanceResponse {
+  const _$InvidiousInstanceResponseImpl(
+      {required this.name, required this.details});
+
+  factory _$InvidiousInstanceResponseImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousInstanceResponseImplFromJson(json);
+
+  @override
+  final String name;
+  @override
+  final InvidiousInstanceDetails details;
+
+  @override
+  String toString() {
+    return 'InvidiousInstanceResponse(name: $name, details: $details)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousInstanceResponseImpl &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.details, details) || other.details == details));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, name, details);
+
+  /// Create a copy of InvidiousInstanceResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousInstanceResponseImplCopyWith<_$InvidiousInstanceResponseImpl>
+      get copyWith => __$$InvidiousInstanceResponseImplCopyWithImpl<
+          _$InvidiousInstanceResponseImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousInstanceResponseImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousInstanceResponse implements InvidiousInstanceResponse {
+  const factory _InvidiousInstanceResponse(
+          {required final String name,
+          required final InvidiousInstanceDetails details}) =
+      _$InvidiousInstanceResponseImpl;
+
+  factory _InvidiousInstanceResponse.fromJson(Map<String, dynamic> json) =
+      _$InvidiousInstanceResponseImpl.fromJson;
+
+  @override
+  String get name;
+  @override
+  InvidiousInstanceDetails get details;
+
+  /// Create a copy of InvidiousInstanceResponse
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousInstanceResponseImplCopyWith<_$InvidiousInstanceResponseImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+InvidiousInstanceDetails _$InvidiousInstanceDetailsFromJson(
+    Map<String, dynamic> json) {
+  return _InvidiousInstanceDetails.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousInstanceDetails {
+  String get flag => throw _privateConstructorUsedError;
+  String get region => throw _privateConstructorUsedError;
+  InvidiousStats? get stats => throw _privateConstructorUsedError;
+  bool? get cors => throw _privateConstructorUsedError;
+  bool? get api => throw _privateConstructorUsedError;
+  String get type => throw _privateConstructorUsedError;
+  String get uri => throw _privateConstructorUsedError;
+  InvidiousMonitor? get monitor => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousInstanceDetails to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousInstanceDetailsCopyWith<InvidiousInstanceDetails> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousInstanceDetailsCopyWith<$Res> {
+  factory $InvidiousInstanceDetailsCopyWith(InvidiousInstanceDetails value,
+          $Res Function(InvidiousInstanceDetails) then) =
+      _$InvidiousInstanceDetailsCopyWithImpl<$Res, InvidiousInstanceDetails>;
+  @useResult
+  $Res call(
+      {String flag,
+      String region,
+      InvidiousStats? stats,
+      bool? cors,
+      bool? api,
+      String type,
+      String uri,
+      InvidiousMonitor? monitor});
+
+  $InvidiousStatsCopyWith<$Res>? get stats;
+  $InvidiousMonitorCopyWith<$Res>? get monitor;
+}
+
+/// @nodoc
+class _$InvidiousInstanceDetailsCopyWithImpl<$Res,
+        $Val extends InvidiousInstanceDetails>
+    implements $InvidiousInstanceDetailsCopyWith<$Res> {
+  _$InvidiousInstanceDetailsCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? flag = null,
+    Object? region = null,
+    Object? stats = freezed,
+    Object? cors = freezed,
+    Object? api = freezed,
+    Object? type = null,
+    Object? uri = null,
+    Object? monitor = freezed,
+  }) {
+    return _then(_value.copyWith(
+      flag: null == flag
+          ? _value.flag
+          : flag // ignore: cast_nullable_to_non_nullable
+              as String,
+      region: null == region
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as String,
+      stats: freezed == stats
+          ? _value.stats
+          : stats // ignore: cast_nullable_to_non_nullable
+              as InvidiousStats?,
+      cors: freezed == cors
+          ? _value.cors
+          : cors // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      api: freezed == api
+          ? _value.api
+          : api // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      uri: null == uri
+          ? _value.uri
+          : uri // ignore: cast_nullable_to_non_nullable
+              as String,
+      monitor: freezed == monitor
+          ? _value.monitor
+          : monitor // ignore: cast_nullable_to_non_nullable
+              as InvidiousMonitor?,
+    ) as $Val);
+  }
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousStatsCopyWith<$Res>? get stats {
+    if (_value.stats == null) {
+      return null;
+    }
+
+    return $InvidiousStatsCopyWith<$Res>(_value.stats!, (value) {
+      return _then(_value.copyWith(stats: value) as $Val);
+    });
+  }
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousMonitorCopyWith<$Res>? get monitor {
+    if (_value.monitor == null) {
+      return null;
+    }
+
+    return $InvidiousMonitorCopyWith<$Res>(_value.monitor!, (value) {
+      return _then(_value.copyWith(monitor: value) as $Val);
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousInstanceDetailsImplCopyWith<$Res>
+    implements $InvidiousInstanceDetailsCopyWith<$Res> {
+  factory _$$InvidiousInstanceDetailsImplCopyWith(
+          _$InvidiousInstanceDetailsImpl value,
+          $Res Function(_$InvidiousInstanceDetailsImpl) then) =
+      __$$InvidiousInstanceDetailsImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String flag,
+      String region,
+      InvidiousStats? stats,
+      bool? cors,
+      bool? api,
+      String type,
+      String uri,
+      InvidiousMonitor? monitor});
+
+  @override
+  $InvidiousStatsCopyWith<$Res>? get stats;
+  @override
+  $InvidiousMonitorCopyWith<$Res>? get monitor;
+}
+
+/// @nodoc
+class __$$InvidiousInstanceDetailsImplCopyWithImpl<$Res>
+    extends _$InvidiousInstanceDetailsCopyWithImpl<$Res,
+        _$InvidiousInstanceDetailsImpl>
+    implements _$$InvidiousInstanceDetailsImplCopyWith<$Res> {
+  __$$InvidiousInstanceDetailsImplCopyWithImpl(
+      _$InvidiousInstanceDetailsImpl _value,
+      $Res Function(_$InvidiousInstanceDetailsImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? flag = null,
+    Object? region = null,
+    Object? stats = freezed,
+    Object? cors = freezed,
+    Object? api = freezed,
+    Object? type = null,
+    Object? uri = null,
+    Object? monitor = freezed,
+  }) {
+    return _then(_$InvidiousInstanceDetailsImpl(
+      flag: null == flag
+          ? _value.flag
+          : flag // ignore: cast_nullable_to_non_nullable
+              as String,
+      region: null == region
+          ? _value.region
+          : region // ignore: cast_nullable_to_non_nullable
+              as String,
+      stats: freezed == stats
+          ? _value.stats
+          : stats // ignore: cast_nullable_to_non_nullable
+              as InvidiousStats?,
+      cors: freezed == cors
+          ? _value.cors
+          : cors // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      api: freezed == api
+          ? _value.api
+          : api // ignore: cast_nullable_to_non_nullable
+              as bool?,
+      type: null == type
+          ? _value.type
+          : type // ignore: cast_nullable_to_non_nullable
+              as String,
+      uri: null == uri
+          ? _value.uri
+          : uri // ignore: cast_nullable_to_non_nullable
+              as String,
+      monitor: freezed == monitor
+          ? _value.monitor
+          : monitor // ignore: cast_nullable_to_non_nullable
+              as InvidiousMonitor?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousInstanceDetailsImpl implements _InvidiousInstanceDetails {
+  const _$InvidiousInstanceDetailsImpl(
+      {required this.flag,
+      required this.region,
+      this.stats,
+      this.cors,
+      this.api,
+      required this.type,
+      required this.uri,
+      this.monitor});
+
+  factory _$InvidiousInstanceDetailsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousInstanceDetailsImplFromJson(json);
+
+  @override
+  final String flag;
+  @override
+  final String region;
+  @override
+  final InvidiousStats? stats;
+  @override
+  final bool? cors;
+  @override
+  final bool? api;
+  @override
+  final String type;
+  @override
+  final String uri;
+  @override
+  final InvidiousMonitor? monitor;
+
+  @override
+  String toString() {
+    return 'InvidiousInstanceDetails(flag: $flag, region: $region, stats: $stats, cors: $cors, api: $api, type: $type, uri: $uri, monitor: $monitor)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousInstanceDetailsImpl &&
+            (identical(other.flag, flag) || other.flag == flag) &&
+            (identical(other.region, region) || other.region == region) &&
+            (identical(other.stats, stats) || other.stats == stats) &&
+            (identical(other.cors, cors) || other.cors == cors) &&
+            (identical(other.api, api) || other.api == api) &&
+            (identical(other.type, type) || other.type == type) &&
+            (identical(other.uri, uri) || other.uri == uri) &&
+            (identical(other.monitor, monitor) || other.monitor == monitor));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(
+      runtimeType, flag, region, stats, cors, api, type, uri, monitor);
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousInstanceDetailsImplCopyWith<_$InvidiousInstanceDetailsImpl>
+      get copyWith => __$$InvidiousInstanceDetailsImplCopyWithImpl<
+          _$InvidiousInstanceDetailsImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousInstanceDetailsImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousInstanceDetails implements InvidiousInstanceDetails {
+  const factory _InvidiousInstanceDetails(
+      {required final String flag,
+      required final String region,
+      final InvidiousStats? stats,
+      final bool? cors,
+      final bool? api,
+      required final String type,
+      required final String uri,
+      final InvidiousMonitor? monitor}) = _$InvidiousInstanceDetailsImpl;
+
+  factory _InvidiousInstanceDetails.fromJson(Map<String, dynamic> json) =
+      _$InvidiousInstanceDetailsImpl.fromJson;
+
+  @override
+  String get flag;
+  @override
+  String get region;
+  @override
+  InvidiousStats? get stats;
+  @override
+  bool? get cors;
+  @override
+  bool? get api;
+  @override
+  String get type;
+  @override
+  String get uri;
+  @override
+  InvidiousMonitor? get monitor;
+
+  /// Create a copy of InvidiousInstanceDetails
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousInstanceDetailsImplCopyWith<_$InvidiousInstanceDetailsImpl>
+      get copyWith => throw _privateConstructorUsedError;
+}
+
+InvidiousStats _$InvidiousStatsFromJson(Map<String, dynamic> json) {
+  return _InvidiousStats.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousStats {
+  String get version => throw _privateConstructorUsedError;
+  InvidiousSoftware get software => throw _privateConstructorUsedError;
+  bool get openRegistrations => throw _privateConstructorUsedError;
+  InvidiousUsage get usage => throw _privateConstructorUsedError;
+  InvidiousMetadata get metadata => throw _privateConstructorUsedError;
+  InvidiousPlayback get playback => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousStats to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousStatsCopyWith<InvidiousStats> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousStatsCopyWith<$Res> {
+  factory $InvidiousStatsCopyWith(
+          InvidiousStats value, $Res Function(InvidiousStats) then) =
+      _$InvidiousStatsCopyWithImpl<$Res, InvidiousStats>;
+  @useResult
+  $Res call(
+      {String version,
+      InvidiousSoftware software,
+      bool openRegistrations,
+      InvidiousUsage usage,
+      InvidiousMetadata metadata,
+      InvidiousPlayback playback});
+
+  $InvidiousSoftwareCopyWith<$Res> get software;
+  $InvidiousUsageCopyWith<$Res> get usage;
+  $InvidiousMetadataCopyWith<$Res> get metadata;
+  $InvidiousPlaybackCopyWith<$Res> get playback;
+}
+
+/// @nodoc
+class _$InvidiousStatsCopyWithImpl<$Res, $Val extends InvidiousStats>
+    implements $InvidiousStatsCopyWith<$Res> {
+  _$InvidiousStatsCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? version = null,
+    Object? software = null,
+    Object? openRegistrations = null,
+    Object? usage = null,
+    Object? metadata = null,
+    Object? playback = null,
+  }) {
+    return _then(_value.copyWith(
+      version: null == version
+          ? _value.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as String,
+      software: null == software
+          ? _value.software
+          : software // ignore: cast_nullable_to_non_nullable
+              as InvidiousSoftware,
+      openRegistrations: null == openRegistrations
+          ? _value.openRegistrations
+          : openRegistrations // ignore: cast_nullable_to_non_nullable
+              as bool,
+      usage: null == usage
+          ? _value.usage
+          : usage // ignore: cast_nullable_to_non_nullable
+              as InvidiousUsage,
+      metadata: null == metadata
+          ? _value.metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as InvidiousMetadata,
+      playback: null == playback
+          ? _value.playback
+          : playback // ignore: cast_nullable_to_non_nullable
+              as InvidiousPlayback,
+    ) as $Val);
+  }
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousSoftwareCopyWith<$Res> get software {
+    return $InvidiousSoftwareCopyWith<$Res>(_value.software, (value) {
+      return _then(_value.copyWith(software: value) as $Val);
+    });
+  }
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousUsageCopyWith<$Res> get usage {
+    return $InvidiousUsageCopyWith<$Res>(_value.usage, (value) {
+      return _then(_value.copyWith(usage: value) as $Val);
+    });
+  }
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousMetadataCopyWith<$Res> get metadata {
+    return $InvidiousMetadataCopyWith<$Res>(_value.metadata, (value) {
+      return _then(_value.copyWith(metadata: value) as $Val);
+    });
+  }
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousPlaybackCopyWith<$Res> get playback {
+    return $InvidiousPlaybackCopyWith<$Res>(_value.playback, (value) {
+      return _then(_value.copyWith(playback: value) as $Val);
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousStatsImplCopyWith<$Res>
+    implements $InvidiousStatsCopyWith<$Res> {
+  factory _$$InvidiousStatsImplCopyWith(_$InvidiousStatsImpl value,
+          $Res Function(_$InvidiousStatsImpl) then) =
+      __$$InvidiousStatsImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String version,
+      InvidiousSoftware software,
+      bool openRegistrations,
+      InvidiousUsage usage,
+      InvidiousMetadata metadata,
+      InvidiousPlayback playback});
+
+  @override
+  $InvidiousSoftwareCopyWith<$Res> get software;
+  @override
+  $InvidiousUsageCopyWith<$Res> get usage;
+  @override
+  $InvidiousMetadataCopyWith<$Res> get metadata;
+  @override
+  $InvidiousPlaybackCopyWith<$Res> get playback;
+}
+
+/// @nodoc
+class __$$InvidiousStatsImplCopyWithImpl<$Res>
+    extends _$InvidiousStatsCopyWithImpl<$Res, _$InvidiousStatsImpl>
+    implements _$$InvidiousStatsImplCopyWith<$Res> {
+  __$$InvidiousStatsImplCopyWithImpl(
+      _$InvidiousStatsImpl _value, $Res Function(_$InvidiousStatsImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? version = null,
+    Object? software = null,
+    Object? openRegistrations = null,
+    Object? usage = null,
+    Object? metadata = null,
+    Object? playback = null,
+  }) {
+    return _then(_$InvidiousStatsImpl(
+      version: null == version
+          ? _value.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as String,
+      software: null == software
+          ? _value.software
+          : software // ignore: cast_nullable_to_non_nullable
+              as InvidiousSoftware,
+      openRegistrations: null == openRegistrations
+          ? _value.openRegistrations
+          : openRegistrations // ignore: cast_nullable_to_non_nullable
+              as bool,
+      usage: null == usage
+          ? _value.usage
+          : usage // ignore: cast_nullable_to_non_nullable
+              as InvidiousUsage,
+      metadata: null == metadata
+          ? _value.metadata
+          : metadata // ignore: cast_nullable_to_non_nullable
+              as InvidiousMetadata,
+      playback: null == playback
+          ? _value.playback
+          : playback // ignore: cast_nullable_to_non_nullable
+              as InvidiousPlayback,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousStatsImpl implements _InvidiousStats {
+  const _$InvidiousStatsImpl(
+      {required this.version,
+      required this.software,
+      required this.openRegistrations,
+      required this.usage,
+      required this.metadata,
+      required this.playback});
+
+  factory _$InvidiousStatsImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousStatsImplFromJson(json);
+
+  @override
+  final String version;
+  @override
+  final InvidiousSoftware software;
+  @override
+  final bool openRegistrations;
+  @override
+  final InvidiousUsage usage;
+  @override
+  final InvidiousMetadata metadata;
+  @override
+  final InvidiousPlayback playback;
+
+  @override
+  String toString() {
+    return 'InvidiousStats(version: $version, software: $software, openRegistrations: $openRegistrations, usage: $usage, metadata: $metadata, playback: $playback)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousStatsImpl &&
+            (identical(other.version, version) || other.version == version) &&
+            (identical(other.software, software) ||
+                other.software == software) &&
+            (identical(other.openRegistrations, openRegistrations) ||
+                other.openRegistrations == openRegistrations) &&
+            (identical(other.usage, usage) || other.usage == usage) &&
+            (identical(other.metadata, metadata) ||
+                other.metadata == metadata) &&
+            (identical(other.playback, playback) ||
+                other.playback == playback));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, version, software,
+      openRegistrations, usage, metadata, playback);
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousStatsImplCopyWith<_$InvidiousStatsImpl> get copyWith =>
+      __$$InvidiousStatsImplCopyWithImpl<_$InvidiousStatsImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousStatsImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousStats implements InvidiousStats {
+  const factory _InvidiousStats(
+      {required final String version,
+      required final InvidiousSoftware software,
+      required final bool openRegistrations,
+      required final InvidiousUsage usage,
+      required final InvidiousMetadata metadata,
+      required final InvidiousPlayback playback}) = _$InvidiousStatsImpl;
+
+  factory _InvidiousStats.fromJson(Map<String, dynamic> json) =
+      _$InvidiousStatsImpl.fromJson;
+
+  @override
+  String get version;
+  @override
+  InvidiousSoftware get software;
+  @override
+  bool get openRegistrations;
+  @override
+  InvidiousUsage get usage;
+  @override
+  InvidiousMetadata get metadata;
+  @override
+  InvidiousPlayback get playback;
+
+  /// Create a copy of InvidiousStats
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousStatsImplCopyWith<_$InvidiousStatsImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+InvidiousSoftware _$InvidiousSoftwareFromJson(Map<String, dynamic> json) {
+  return _InvidiousSoftware.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousSoftware {
+  String get name => throw _privateConstructorUsedError;
+  String get version => throw _privateConstructorUsedError;
+  String get branch => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousSoftware to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousSoftware
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousSoftwareCopyWith<InvidiousSoftware> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousSoftwareCopyWith<$Res> {
+  factory $InvidiousSoftwareCopyWith(
+          InvidiousSoftware value, $Res Function(InvidiousSoftware) then) =
+      _$InvidiousSoftwareCopyWithImpl<$Res, InvidiousSoftware>;
+  @useResult
+  $Res call({String name, String version, String branch});
+}
+
+/// @nodoc
+class _$InvidiousSoftwareCopyWithImpl<$Res, $Val extends InvidiousSoftware>
+    implements $InvidiousSoftwareCopyWith<$Res> {
+  _$InvidiousSoftwareCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousSoftware
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? name = null,
+    Object? version = null,
+    Object? branch = null,
+  }) {
+    return _then(_value.copyWith(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      version: null == version
+          ? _value.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as String,
+      branch: null == branch
+          ? _value.branch
+          : branch // ignore: cast_nullable_to_non_nullable
+              as String,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousSoftwareImplCopyWith<$Res>
+    implements $InvidiousSoftwareCopyWith<$Res> {
+  factory _$$InvidiousSoftwareImplCopyWith(_$InvidiousSoftwareImpl value,
+          $Res Function(_$InvidiousSoftwareImpl) then) =
+      __$$InvidiousSoftwareImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({String name, String version, String branch});
+}
+
+/// @nodoc
+class __$$InvidiousSoftwareImplCopyWithImpl<$Res>
+    extends _$InvidiousSoftwareCopyWithImpl<$Res, _$InvidiousSoftwareImpl>
+    implements _$$InvidiousSoftwareImplCopyWith<$Res> {
+  __$$InvidiousSoftwareImplCopyWithImpl(_$InvidiousSoftwareImpl _value,
+      $Res Function(_$InvidiousSoftwareImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousSoftware
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? name = null,
+    Object? version = null,
+    Object? branch = null,
+  }) {
+    return _then(_$InvidiousSoftwareImpl(
+      name: null == name
+          ? _value.name
+          : name // ignore: cast_nullable_to_non_nullable
+              as String,
+      version: null == version
+          ? _value.version
+          : version // ignore: cast_nullable_to_non_nullable
+              as String,
+      branch: null == branch
+          ? _value.branch
+          : branch // ignore: cast_nullable_to_non_nullable
+              as String,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousSoftwareImpl implements _InvidiousSoftware {
+  const _$InvidiousSoftwareImpl(
+      {required this.name, required this.version, required this.branch});
+
+  factory _$InvidiousSoftwareImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousSoftwareImplFromJson(json);
+
+  @override
+  final String name;
+  @override
+  final String version;
+  @override
+  final String branch;
+
+  @override
+  String toString() {
+    return 'InvidiousSoftware(name: $name, version: $version, branch: $branch)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousSoftwareImpl &&
+            (identical(other.name, name) || other.name == name) &&
+            (identical(other.version, version) || other.version == version) &&
+            (identical(other.branch, branch) || other.branch == branch));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, name, version, branch);
+
+  /// Create a copy of InvidiousSoftware
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousSoftwareImplCopyWith<_$InvidiousSoftwareImpl> get copyWith =>
+      __$$InvidiousSoftwareImplCopyWithImpl<_$InvidiousSoftwareImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousSoftwareImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousSoftware implements InvidiousSoftware {
+  const factory _InvidiousSoftware(
+      {required final String name,
+      required final String version,
+      required final String branch}) = _$InvidiousSoftwareImpl;
+
+  factory _InvidiousSoftware.fromJson(Map<String, dynamic> json) =
+      _$InvidiousSoftwareImpl.fromJson;
+
+  @override
+  String get name;
+  @override
+  String get version;
+  @override
+  String get branch;
+
+  /// Create a copy of InvidiousSoftware
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousSoftwareImplCopyWith<_$InvidiousSoftwareImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+InvidiousUsage _$InvidiousUsageFromJson(Map<String, dynamic> json) {
+  return _InvidiousUsage.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousUsage {
+  InvidiousUsers get users => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousUsage to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousUsage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousUsageCopyWith<InvidiousUsage> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousUsageCopyWith<$Res> {
+  factory $InvidiousUsageCopyWith(
+          InvidiousUsage value, $Res Function(InvidiousUsage) then) =
+      _$InvidiousUsageCopyWithImpl<$Res, InvidiousUsage>;
+  @useResult
+  $Res call({InvidiousUsers users});
+
+  $InvidiousUsersCopyWith<$Res> get users;
+}
+
+/// @nodoc
+class _$InvidiousUsageCopyWithImpl<$Res, $Val extends InvidiousUsage>
+    implements $InvidiousUsageCopyWith<$Res> {
+  _$InvidiousUsageCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousUsage
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? users = null,
+  }) {
+    return _then(_value.copyWith(
+      users: null == users
+          ? _value.users
+          : users // ignore: cast_nullable_to_non_nullable
+              as InvidiousUsers,
+    ) as $Val);
+  }
+
+  /// Create a copy of InvidiousUsage
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousUsersCopyWith<$Res> get users {
+    return $InvidiousUsersCopyWith<$Res>(_value.users, (value) {
+      return _then(_value.copyWith(users: value) as $Val);
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousUsageImplCopyWith<$Res>
+    implements $InvidiousUsageCopyWith<$Res> {
+  factory _$$InvidiousUsageImplCopyWith(_$InvidiousUsageImpl value,
+          $Res Function(_$InvidiousUsageImpl) then) =
+      __$$InvidiousUsageImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({InvidiousUsers users});
+
+  @override
+  $InvidiousUsersCopyWith<$Res> get users;
+}
+
+/// @nodoc
+class __$$InvidiousUsageImplCopyWithImpl<$Res>
+    extends _$InvidiousUsageCopyWithImpl<$Res, _$InvidiousUsageImpl>
+    implements _$$InvidiousUsageImplCopyWith<$Res> {
+  __$$InvidiousUsageImplCopyWithImpl(
+      _$InvidiousUsageImpl _value, $Res Function(_$InvidiousUsageImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousUsage
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? users = null,
+  }) {
+    return _then(_$InvidiousUsageImpl(
+      users: null == users
+          ? _value.users
+          : users // ignore: cast_nullable_to_non_nullable
+              as InvidiousUsers,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousUsageImpl implements _InvidiousUsage {
+  const _$InvidiousUsageImpl({required this.users});
+
+  factory _$InvidiousUsageImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousUsageImplFromJson(json);
+
+  @override
+  final InvidiousUsers users;
+
+  @override
+  String toString() {
+    return 'InvidiousUsage(users: $users)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousUsageImpl &&
+            (identical(other.users, users) || other.users == users));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hash(runtimeType, users);
+
+  /// Create a copy of InvidiousUsage
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousUsageImplCopyWith<_$InvidiousUsageImpl> get copyWith =>
+      __$$InvidiousUsageImplCopyWithImpl<_$InvidiousUsageImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousUsageImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousUsage implements InvidiousUsage {
+  const factory _InvidiousUsage({required final InvidiousUsers users}) =
+      _$InvidiousUsageImpl;
+
+  factory _InvidiousUsage.fromJson(Map<String, dynamic> json) =
+      _$InvidiousUsageImpl.fromJson;
+
+  @override
+  InvidiousUsers get users;
+
+  /// Create a copy of InvidiousUsage
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousUsageImplCopyWith<_$InvidiousUsageImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+InvidiousUsers _$InvidiousUsersFromJson(Map<String, dynamic> json) {
+  return _InvidiousUsers.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousUsers {
+  int get total => throw _privateConstructorUsedError;
+  int get activeHalfyear => throw _privateConstructorUsedError;
+  int get activeMonth => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousUsers to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousUsers
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousUsersCopyWith<InvidiousUsers> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousUsersCopyWith<$Res> {
+  factory $InvidiousUsersCopyWith(
+          InvidiousUsers value, $Res Function(InvidiousUsers) then) =
+      _$InvidiousUsersCopyWithImpl<$Res, InvidiousUsers>;
+  @useResult
+  $Res call({int total, int activeHalfyear, int activeMonth});
+}
+
+/// @nodoc
+class _$InvidiousUsersCopyWithImpl<$Res, $Val extends InvidiousUsers>
+    implements $InvidiousUsersCopyWith<$Res> {
+  _$InvidiousUsersCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousUsers
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? total = null,
+    Object? activeHalfyear = null,
+    Object? activeMonth = null,
+  }) {
+    return _then(_value.copyWith(
+      total: null == total
+          ? _value.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int,
+      activeHalfyear: null == activeHalfyear
+          ? _value.activeHalfyear
+          : activeHalfyear // ignore: cast_nullable_to_non_nullable
+              as int,
+      activeMonth: null == activeMonth
+          ? _value.activeMonth
+          : activeMonth // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousUsersImplCopyWith<$Res>
+    implements $InvidiousUsersCopyWith<$Res> {
+  factory _$$InvidiousUsersImplCopyWith(_$InvidiousUsersImpl value,
+          $Res Function(_$InvidiousUsersImpl) then) =
+      __$$InvidiousUsersImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int total, int activeHalfyear, int activeMonth});
+}
+
+/// @nodoc
+class __$$InvidiousUsersImplCopyWithImpl<$Res>
+    extends _$InvidiousUsersCopyWithImpl<$Res, _$InvidiousUsersImpl>
+    implements _$$InvidiousUsersImplCopyWith<$Res> {
+  __$$InvidiousUsersImplCopyWithImpl(
+      _$InvidiousUsersImpl _value, $Res Function(_$InvidiousUsersImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousUsers
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? total = null,
+    Object? activeHalfyear = null,
+    Object? activeMonth = null,
+  }) {
+    return _then(_$InvidiousUsersImpl(
+      total: null == total
+          ? _value.total
+          : total // ignore: cast_nullable_to_non_nullable
+              as int,
+      activeHalfyear: null == activeHalfyear
+          ? _value.activeHalfyear
+          : activeHalfyear // ignore: cast_nullable_to_non_nullable
+              as int,
+      activeMonth: null == activeMonth
+          ? _value.activeMonth
+          : activeMonth // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousUsersImpl implements _InvidiousUsers {
+  const _$InvidiousUsersImpl(
+      {required this.total,
+      required this.activeHalfyear,
+      required this.activeMonth});
+
+  factory _$InvidiousUsersImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousUsersImplFromJson(json);
+
+  @override
+  final int total;
+  @override
+  final int activeHalfyear;
+  @override
+  final int activeMonth;
+
+  @override
+  String toString() {
+    return 'InvidiousUsers(total: $total, activeHalfyear: $activeHalfyear, activeMonth: $activeMonth)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousUsersImpl &&
+            (identical(other.total, total) || other.total == total) &&
+            (identical(other.activeHalfyear, activeHalfyear) ||
+                other.activeHalfyear == activeHalfyear) &&
+            (identical(other.activeMonth, activeMonth) ||
+                other.activeMonth == activeMonth));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, total, activeHalfyear, activeMonth);
+
+  /// Create a copy of InvidiousUsers
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousUsersImplCopyWith<_$InvidiousUsersImpl> get copyWith =>
+      __$$InvidiousUsersImplCopyWithImpl<_$InvidiousUsersImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousUsersImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousUsers implements InvidiousUsers {
+  const factory _InvidiousUsers(
+      {required final int total,
+      required final int activeHalfyear,
+      required final int activeMonth}) = _$InvidiousUsersImpl;
+
+  factory _InvidiousUsers.fromJson(Map<String, dynamic> json) =
+      _$InvidiousUsersImpl.fromJson;
+
+  @override
+  int get total;
+  @override
+  int get activeHalfyear;
+  @override
+  int get activeMonth;
+
+  /// Create a copy of InvidiousUsers
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousUsersImplCopyWith<_$InvidiousUsersImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+InvidiousMetadata _$InvidiousMetadataFromJson(Map<String, dynamic> json) {
+  return _InvidiousMetadata.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousMetadata {
+  int get updatedAt => throw _privateConstructorUsedError;
+  int get lastChannelRefreshedAt => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousMetadata to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousMetadata
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousMetadataCopyWith<InvidiousMetadata> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousMetadataCopyWith<$Res> {
+  factory $InvidiousMetadataCopyWith(
+          InvidiousMetadata value, $Res Function(InvidiousMetadata) then) =
+      _$InvidiousMetadataCopyWithImpl<$Res, InvidiousMetadata>;
+  @useResult
+  $Res call({int updatedAt, int lastChannelRefreshedAt});
+}
+
+/// @nodoc
+class _$InvidiousMetadataCopyWithImpl<$Res, $Val extends InvidiousMetadata>
+    implements $InvidiousMetadataCopyWith<$Res> {
+  _$InvidiousMetadataCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousMetadata
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? updatedAt = null,
+    Object? lastChannelRefreshedAt = null,
+  }) {
+    return _then(_value.copyWith(
+      updatedAt: null == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as int,
+      lastChannelRefreshedAt: null == lastChannelRefreshedAt
+          ? _value.lastChannelRefreshedAt
+          : lastChannelRefreshedAt // ignore: cast_nullable_to_non_nullable
+              as int,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousMetadataImplCopyWith<$Res>
+    implements $InvidiousMetadataCopyWith<$Res> {
+  factory _$$InvidiousMetadataImplCopyWith(_$InvidiousMetadataImpl value,
+          $Res Function(_$InvidiousMetadataImpl) then) =
+      __$$InvidiousMetadataImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call({int updatedAt, int lastChannelRefreshedAt});
+}
+
+/// @nodoc
+class __$$InvidiousMetadataImplCopyWithImpl<$Res>
+    extends _$InvidiousMetadataCopyWithImpl<$Res, _$InvidiousMetadataImpl>
+    implements _$$InvidiousMetadataImplCopyWith<$Res> {
+  __$$InvidiousMetadataImplCopyWithImpl(_$InvidiousMetadataImpl _value,
+      $Res Function(_$InvidiousMetadataImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousMetadata
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? updatedAt = null,
+    Object? lastChannelRefreshedAt = null,
+  }) {
+    return _then(_$InvidiousMetadataImpl(
+      updatedAt: null == updatedAt
+          ? _value.updatedAt
+          : updatedAt // ignore: cast_nullable_to_non_nullable
+              as int,
+      lastChannelRefreshedAt: null == lastChannelRefreshedAt
+          ? _value.lastChannelRefreshedAt
+          : lastChannelRefreshedAt // ignore: cast_nullable_to_non_nullable
+              as int,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousMetadataImpl implements _InvidiousMetadata {
+  const _$InvidiousMetadataImpl(
+      {required this.updatedAt, required this.lastChannelRefreshedAt});
+
+  factory _$InvidiousMetadataImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousMetadataImplFromJson(json);
+
+  @override
+  final int updatedAt;
+  @override
+  final int lastChannelRefreshedAt;
+
+  @override
+  String toString() {
+    return 'InvidiousMetadata(updatedAt: $updatedAt, lastChannelRefreshedAt: $lastChannelRefreshedAt)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousMetadataImpl &&
+            (identical(other.updatedAt, updatedAt) ||
+                other.updatedAt == updatedAt) &&
+            (identical(other.lastChannelRefreshedAt, lastChannelRefreshedAt) ||
+                other.lastChannelRefreshedAt == lastChannelRefreshedAt));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, updatedAt, lastChannelRefreshedAt);
+
+  /// Create a copy of InvidiousMetadata
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousMetadataImplCopyWith<_$InvidiousMetadataImpl> get copyWith =>
+      __$$InvidiousMetadataImplCopyWithImpl<_$InvidiousMetadataImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousMetadataImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousMetadata implements InvidiousMetadata {
+  const factory _InvidiousMetadata(
+      {required final int updatedAt,
+      required final int lastChannelRefreshedAt}) = _$InvidiousMetadataImpl;
+
+  factory _InvidiousMetadata.fromJson(Map<String, dynamic> json) =
+      _$InvidiousMetadataImpl.fromJson;
+
+  @override
+  int get updatedAt;
+  @override
+  int get lastChannelRefreshedAt;
+
+  /// Create a copy of InvidiousMetadata
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousMetadataImplCopyWith<_$InvidiousMetadataImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+InvidiousPlayback _$InvidiousPlaybackFromJson(Map<String, dynamic> json) {
+  return _InvidiousPlayback.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousPlayback {
+  /// Serializes this InvidiousPlayback to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousPlaybackCopyWith<$Res> {
+  factory $InvidiousPlaybackCopyWith(
+          InvidiousPlayback value, $Res Function(InvidiousPlayback) then) =
+      _$InvidiousPlaybackCopyWithImpl<$Res, InvidiousPlayback>;
+}
+
+/// @nodoc
+class _$InvidiousPlaybackCopyWithImpl<$Res, $Val extends InvidiousPlayback>
+    implements $InvidiousPlaybackCopyWith<$Res> {
+  _$InvidiousPlaybackCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousPlayback
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+abstract class _$$InvidiousPlaybackImplCopyWith<$Res> {
+  factory _$$InvidiousPlaybackImplCopyWith(_$InvidiousPlaybackImpl value,
+          $Res Function(_$InvidiousPlaybackImpl) then) =
+      __$$InvidiousPlaybackImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$InvidiousPlaybackImplCopyWithImpl<$Res>
+    extends _$InvidiousPlaybackCopyWithImpl<$Res, _$InvidiousPlaybackImpl>
+    implements _$$InvidiousPlaybackImplCopyWith<$Res> {
+  __$$InvidiousPlaybackImplCopyWithImpl(_$InvidiousPlaybackImpl _value,
+      $Res Function(_$InvidiousPlaybackImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousPlayback
+  /// with the given fields replaced by the non-null parameter values.
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousPlaybackImpl implements _InvidiousPlayback {
+  const _$InvidiousPlaybackImpl();
+
+  factory _$InvidiousPlaybackImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousPlaybackImplFromJson(json);
+
+  @override
+  String toString() {
+    return 'InvidiousPlayback()';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$InvidiousPlaybackImpl);
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousPlaybackImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousPlayback implements InvidiousPlayback {
+  const factory _InvidiousPlayback() = _$InvidiousPlaybackImpl;
+
+  factory _InvidiousPlayback.fromJson(Map<String, dynamic> json) =
+      _$InvidiousPlaybackImpl.fromJson;
+}
+
+InvidiousMonitor _$InvidiousMonitorFromJson(Map<String, dynamic> json) {
+  return _InvidiousMonitor.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousMonitor {
+  String get token => throw _privateConstructorUsedError;
+  String get url => throw _privateConstructorUsedError;
+  String get alias => throw _privateConstructorUsedError;
+  @JsonKey(name: 'last_status')
+  int get lastStatus => throw _privateConstructorUsedError;
+  double get uptime => throw _privateConstructorUsedError;
+  bool get down => throw _privateConstructorUsedError;
+  @JsonKey(name: 'down_since')
+  DateTime? get downSince => throw _privateConstructorUsedError;
+  @JsonKey(name: 'up_since')
+  DateTime get upSince => throw _privateConstructorUsedError;
+  String? get error => throw _privateConstructorUsedError;
+  int get period => throw _privateConstructorUsedError;
+  @JsonKey(name: 'apdex_t')
+  int get apdexT => throw _privateConstructorUsedError;
+  @JsonKey(name: 'string_match')
+  String get stringMatch => throw _privateConstructorUsedError;
+  bool get enabled => throw _privateConstructorUsedError;
+  bool get published => throw _privateConstructorUsedError;
+  @JsonKey(name: 'disabled_locations')
+  List<String> get disabledLocations => throw _privateConstructorUsedError;
+  List<String> get recipients => throw _privateConstructorUsedError;
+  @JsonKey(name: 'last_check_at')
+  DateTime get lastCheckAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'next_check_at')
+  DateTime get nextCheckAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'created_at')
+  DateTime get createdAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'mute_until')
+  String get muteUntil => throw _privateConstructorUsedError;
+  @JsonKey(name: 'favicon_url')
+  String get faviconUrl => throw _privateConstructorUsedError;
+  InvidiousSSL get ssl => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousMonitor to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousMonitor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousMonitorCopyWith<InvidiousMonitor> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousMonitorCopyWith<$Res> {
+  factory $InvidiousMonitorCopyWith(
+          InvidiousMonitor value, $Res Function(InvidiousMonitor) then) =
+      _$InvidiousMonitorCopyWithImpl<$Res, InvidiousMonitor>;
+  @useResult
+  $Res call(
+      {String token,
+      String url,
+      String alias,
+      @JsonKey(name: 'last_status') int lastStatus,
+      double uptime,
+      bool down,
+      @JsonKey(name: 'down_since') DateTime? downSince,
+      @JsonKey(name: 'up_since') DateTime upSince,
+      String? error,
+      int period,
+      @JsonKey(name: 'apdex_t') int apdexT,
+      @JsonKey(name: 'string_match') String stringMatch,
+      bool enabled,
+      bool published,
+      @JsonKey(name: 'disabled_locations') List<String> disabledLocations,
+      List<String> recipients,
+      @JsonKey(name: 'last_check_at') DateTime lastCheckAt,
+      @JsonKey(name: 'next_check_at') DateTime nextCheckAt,
+      @JsonKey(name: 'created_at') DateTime createdAt,
+      @JsonKey(name: 'mute_until') String muteUntil,
+      @JsonKey(name: 'favicon_url') String faviconUrl,
+      InvidiousSSL ssl});
+
+  $InvidiousSSLCopyWith<$Res> get ssl;
+}
+
+/// @nodoc
+class _$InvidiousMonitorCopyWithImpl<$Res, $Val extends InvidiousMonitor>
+    implements $InvidiousMonitorCopyWith<$Res> {
+  _$InvidiousMonitorCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousMonitor
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? token = null,
+    Object? url = null,
+    Object? alias = null,
+    Object? lastStatus = null,
+    Object? uptime = null,
+    Object? down = null,
+    Object? downSince = freezed,
+    Object? upSince = null,
+    Object? error = freezed,
+    Object? period = null,
+    Object? apdexT = null,
+    Object? stringMatch = null,
+    Object? enabled = null,
+    Object? published = null,
+    Object? disabledLocations = null,
+    Object? recipients = null,
+    Object? lastCheckAt = null,
+    Object? nextCheckAt = null,
+    Object? createdAt = null,
+    Object? muteUntil = null,
+    Object? faviconUrl = null,
+    Object? ssl = null,
+  }) {
+    return _then(_value.copyWith(
+      token: null == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      alias: null == alias
+          ? _value.alias
+          : alias // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastStatus: null == lastStatus
+          ? _value.lastStatus
+          : lastStatus // ignore: cast_nullable_to_non_nullable
+              as int,
+      uptime: null == uptime
+          ? _value.uptime
+          : uptime // ignore: cast_nullable_to_non_nullable
+              as double,
+      down: null == down
+          ? _value.down
+          : down // ignore: cast_nullable_to_non_nullable
+              as bool,
+      downSince: freezed == downSince
+          ? _value.downSince
+          : downSince // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      upSince: null == upSince
+          ? _value.upSince
+          : upSince // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      period: null == period
+          ? _value.period
+          : period // ignore: cast_nullable_to_non_nullable
+              as int,
+      apdexT: null == apdexT
+          ? _value.apdexT
+          : apdexT // ignore: cast_nullable_to_non_nullable
+              as int,
+      stringMatch: null == stringMatch
+          ? _value.stringMatch
+          : stringMatch // ignore: cast_nullable_to_non_nullable
+              as String,
+      enabled: null == enabled
+          ? _value.enabled
+          : enabled // ignore: cast_nullable_to_non_nullable
+              as bool,
+      published: null == published
+          ? _value.published
+          : published // ignore: cast_nullable_to_non_nullable
+              as bool,
+      disabledLocations: null == disabledLocations
+          ? _value.disabledLocations
+          : disabledLocations // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      recipients: null == recipients
+          ? _value.recipients
+          : recipients // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      lastCheckAt: null == lastCheckAt
+          ? _value.lastCheckAt
+          : lastCheckAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      nextCheckAt: null == nextCheckAt
+          ? _value.nextCheckAt
+          : nextCheckAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      muteUntil: null == muteUntil
+          ? _value.muteUntil
+          : muteUntil // ignore: cast_nullable_to_non_nullable
+              as String,
+      faviconUrl: null == faviconUrl
+          ? _value.faviconUrl
+          : faviconUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      ssl: null == ssl
+          ? _value.ssl
+          : ssl // ignore: cast_nullable_to_non_nullable
+              as InvidiousSSL,
+    ) as $Val);
+  }
+
+  /// Create a copy of InvidiousMonitor
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @pragma('vm:prefer-inline')
+  $InvidiousSSLCopyWith<$Res> get ssl {
+    return $InvidiousSSLCopyWith<$Res>(_value.ssl, (value) {
+      return _then(_value.copyWith(ssl: value) as $Val);
+    });
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousMonitorImplCopyWith<$Res>
+    implements $InvidiousMonitorCopyWith<$Res> {
+  factory _$$InvidiousMonitorImplCopyWith(_$InvidiousMonitorImpl value,
+          $Res Function(_$InvidiousMonitorImpl) then) =
+      __$$InvidiousMonitorImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {String token,
+      String url,
+      String alias,
+      @JsonKey(name: 'last_status') int lastStatus,
+      double uptime,
+      bool down,
+      @JsonKey(name: 'down_since') DateTime? downSince,
+      @JsonKey(name: 'up_since') DateTime upSince,
+      String? error,
+      int period,
+      @JsonKey(name: 'apdex_t') int apdexT,
+      @JsonKey(name: 'string_match') String stringMatch,
+      bool enabled,
+      bool published,
+      @JsonKey(name: 'disabled_locations') List<String> disabledLocations,
+      List<String> recipients,
+      @JsonKey(name: 'last_check_at') DateTime lastCheckAt,
+      @JsonKey(name: 'next_check_at') DateTime nextCheckAt,
+      @JsonKey(name: 'created_at') DateTime createdAt,
+      @JsonKey(name: 'mute_until') String muteUntil,
+      @JsonKey(name: 'favicon_url') String faviconUrl,
+      InvidiousSSL ssl});
+
+  @override
+  $InvidiousSSLCopyWith<$Res> get ssl;
+}
+
+/// @nodoc
+class __$$InvidiousMonitorImplCopyWithImpl<$Res>
+    extends _$InvidiousMonitorCopyWithImpl<$Res, _$InvidiousMonitorImpl>
+    implements _$$InvidiousMonitorImplCopyWith<$Res> {
+  __$$InvidiousMonitorImplCopyWithImpl(_$InvidiousMonitorImpl _value,
+      $Res Function(_$InvidiousMonitorImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousMonitor
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? token = null,
+    Object? url = null,
+    Object? alias = null,
+    Object? lastStatus = null,
+    Object? uptime = null,
+    Object? down = null,
+    Object? downSince = freezed,
+    Object? upSince = null,
+    Object? error = freezed,
+    Object? period = null,
+    Object? apdexT = null,
+    Object? stringMatch = null,
+    Object? enabled = null,
+    Object? published = null,
+    Object? disabledLocations = null,
+    Object? recipients = null,
+    Object? lastCheckAt = null,
+    Object? nextCheckAt = null,
+    Object? createdAt = null,
+    Object? muteUntil = null,
+    Object? faviconUrl = null,
+    Object? ssl = null,
+  }) {
+    return _then(_$InvidiousMonitorImpl(
+      token: null == token
+          ? _value.token
+          : token // ignore: cast_nullable_to_non_nullable
+              as String,
+      url: null == url
+          ? _value.url
+          : url // ignore: cast_nullable_to_non_nullable
+              as String,
+      alias: null == alias
+          ? _value.alias
+          : alias // ignore: cast_nullable_to_non_nullable
+              as String,
+      lastStatus: null == lastStatus
+          ? _value.lastStatus
+          : lastStatus // ignore: cast_nullable_to_non_nullable
+              as int,
+      uptime: null == uptime
+          ? _value.uptime
+          : uptime // ignore: cast_nullable_to_non_nullable
+              as double,
+      down: null == down
+          ? _value.down
+          : down // ignore: cast_nullable_to_non_nullable
+              as bool,
+      downSince: freezed == downSince
+          ? _value.downSince
+          : downSince // ignore: cast_nullable_to_non_nullable
+              as DateTime?,
+      upSince: null == upSince
+          ? _value.upSince
+          : upSince // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+      period: null == period
+          ? _value.period
+          : period // ignore: cast_nullable_to_non_nullable
+              as int,
+      apdexT: null == apdexT
+          ? _value.apdexT
+          : apdexT // ignore: cast_nullable_to_non_nullable
+              as int,
+      stringMatch: null == stringMatch
+          ? _value.stringMatch
+          : stringMatch // ignore: cast_nullable_to_non_nullable
+              as String,
+      enabled: null == enabled
+          ? _value.enabled
+          : enabled // ignore: cast_nullable_to_non_nullable
+              as bool,
+      published: null == published
+          ? _value.published
+          : published // ignore: cast_nullable_to_non_nullable
+              as bool,
+      disabledLocations: null == disabledLocations
+          ? _value._disabledLocations
+          : disabledLocations // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      recipients: null == recipients
+          ? _value._recipients
+          : recipients // ignore: cast_nullable_to_non_nullable
+              as List<String>,
+      lastCheckAt: null == lastCheckAt
+          ? _value.lastCheckAt
+          : lastCheckAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      nextCheckAt: null == nextCheckAt
+          ? _value.nextCheckAt
+          : nextCheckAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      createdAt: null == createdAt
+          ? _value.createdAt
+          : createdAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      muteUntil: null == muteUntil
+          ? _value.muteUntil
+          : muteUntil // ignore: cast_nullable_to_non_nullable
+              as String,
+      faviconUrl: null == faviconUrl
+          ? _value.faviconUrl
+          : faviconUrl // ignore: cast_nullable_to_non_nullable
+              as String,
+      ssl: null == ssl
+          ? _value.ssl
+          : ssl // ignore: cast_nullable_to_non_nullable
+              as InvidiousSSL,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousMonitorImpl implements _InvidiousMonitor {
+  const _$InvidiousMonitorImpl(
+      {required this.token,
+      required this.url,
+      required this.alias,
+      @JsonKey(name: 'last_status') required this.lastStatus,
+      required this.uptime,
+      required this.down,
+      @JsonKey(name: 'down_since') this.downSince,
+      @JsonKey(name: 'up_since') required this.upSince,
+      this.error,
+      required this.period,
+      @JsonKey(name: 'apdex_t') required this.apdexT,
+      @JsonKey(name: 'string_match') required this.stringMatch,
+      required this.enabled,
+      required this.published,
+      @JsonKey(name: 'disabled_locations')
+      required final List<String> disabledLocations,
+      required final List<String> recipients,
+      @JsonKey(name: 'last_check_at') required this.lastCheckAt,
+      @JsonKey(name: 'next_check_at') required this.nextCheckAt,
+      @JsonKey(name: 'created_at') required this.createdAt,
+      @JsonKey(name: 'mute_until') required this.muteUntil,
+      @JsonKey(name: 'favicon_url') required this.faviconUrl,
+      required this.ssl})
+      : _disabledLocations = disabledLocations,
+        _recipients = recipients;
+
+  factory _$InvidiousMonitorImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousMonitorImplFromJson(json);
+
+  @override
+  final String token;
+  @override
+  final String url;
+  @override
+  final String alias;
+  @override
+  @JsonKey(name: 'last_status')
+  final int lastStatus;
+  @override
+  final double uptime;
+  @override
+  final bool down;
+  @override
+  @JsonKey(name: 'down_since')
+  final DateTime? downSince;
+  @override
+  @JsonKey(name: 'up_since')
+  final DateTime upSince;
+  @override
+  final String? error;
+  @override
+  final int period;
+  @override
+  @JsonKey(name: 'apdex_t')
+  final int apdexT;
+  @override
+  @JsonKey(name: 'string_match')
+  final String stringMatch;
+  @override
+  final bool enabled;
+  @override
+  final bool published;
+  final List<String> _disabledLocations;
+  @override
+  @JsonKey(name: 'disabled_locations')
+  List<String> get disabledLocations {
+    if (_disabledLocations is EqualUnmodifiableListView)
+      return _disabledLocations;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_disabledLocations);
+  }
+
+  final List<String> _recipients;
+  @override
+  List<String> get recipients {
+    if (_recipients is EqualUnmodifiableListView) return _recipients;
+    // ignore: implicit_dynamic_type
+    return EqualUnmodifiableListView(_recipients);
+  }
+
+  @override
+  @JsonKey(name: 'last_check_at')
+  final DateTime lastCheckAt;
+  @override
+  @JsonKey(name: 'next_check_at')
+  final DateTime nextCheckAt;
+  @override
+  @JsonKey(name: 'created_at')
+  final DateTime createdAt;
+  @override
+  @JsonKey(name: 'mute_until')
+  final String muteUntil;
+  @override
+  @JsonKey(name: 'favicon_url')
+  final String faviconUrl;
+  @override
+  final InvidiousSSL ssl;
+
+  @override
+  String toString() {
+    return 'InvidiousMonitor(token: $token, url: $url, alias: $alias, lastStatus: $lastStatus, uptime: $uptime, down: $down, downSince: $downSince, upSince: $upSince, error: $error, period: $period, apdexT: $apdexT, stringMatch: $stringMatch, enabled: $enabled, published: $published, disabledLocations: $disabledLocations, recipients: $recipients, lastCheckAt: $lastCheckAt, nextCheckAt: $nextCheckAt, createdAt: $createdAt, muteUntil: $muteUntil, faviconUrl: $faviconUrl, ssl: $ssl)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousMonitorImpl &&
+            (identical(other.token, token) || other.token == token) &&
+            (identical(other.url, url) || other.url == url) &&
+            (identical(other.alias, alias) || other.alias == alias) &&
+            (identical(other.lastStatus, lastStatus) ||
+                other.lastStatus == lastStatus) &&
+            (identical(other.uptime, uptime) || other.uptime == uptime) &&
+            (identical(other.down, down) || other.down == down) &&
+            (identical(other.downSince, downSince) ||
+                other.downSince == downSince) &&
+            (identical(other.upSince, upSince) || other.upSince == upSince) &&
+            (identical(other.error, error) || other.error == error) &&
+            (identical(other.period, period) || other.period == period) &&
+            (identical(other.apdexT, apdexT) || other.apdexT == apdexT) &&
+            (identical(other.stringMatch, stringMatch) ||
+                other.stringMatch == stringMatch) &&
+            (identical(other.enabled, enabled) || other.enabled == enabled) &&
+            (identical(other.published, published) ||
+                other.published == published) &&
+            const DeepCollectionEquality()
+                .equals(other._disabledLocations, _disabledLocations) &&
+            const DeepCollectionEquality()
+                .equals(other._recipients, _recipients) &&
+            (identical(other.lastCheckAt, lastCheckAt) ||
+                other.lastCheckAt == lastCheckAt) &&
+            (identical(other.nextCheckAt, nextCheckAt) ||
+                other.nextCheckAt == nextCheckAt) &&
+            (identical(other.createdAt, createdAt) ||
+                other.createdAt == createdAt) &&
+            (identical(other.muteUntil, muteUntil) ||
+                other.muteUntil == muteUntil) &&
+            (identical(other.faviconUrl, faviconUrl) ||
+                other.faviconUrl == faviconUrl) &&
+            (identical(other.ssl, ssl) || other.ssl == ssl));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode => Object.hashAll([
+        runtimeType,
+        token,
+        url,
+        alias,
+        lastStatus,
+        uptime,
+        down,
+        downSince,
+        upSince,
+        error,
+        period,
+        apdexT,
+        stringMatch,
+        enabled,
+        published,
+        const DeepCollectionEquality().hash(_disabledLocations),
+        const DeepCollectionEquality().hash(_recipients),
+        lastCheckAt,
+        nextCheckAt,
+        createdAt,
+        muteUntil,
+        faviconUrl,
+        ssl
+      ]);
+
+  /// Create a copy of InvidiousMonitor
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousMonitorImplCopyWith<_$InvidiousMonitorImpl> get copyWith =>
+      __$$InvidiousMonitorImplCopyWithImpl<_$InvidiousMonitorImpl>(
+          this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousMonitorImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousMonitor implements InvidiousMonitor {
+  const factory _InvidiousMonitor(
+      {required final String token,
+      required final String url,
+      required final String alias,
+      @JsonKey(name: 'last_status') required final int lastStatus,
+      required final double uptime,
+      required final bool down,
+      @JsonKey(name: 'down_since') final DateTime? downSince,
+      @JsonKey(name: 'up_since') required final DateTime upSince,
+      final String? error,
+      required final int period,
+      @JsonKey(name: 'apdex_t') required final int apdexT,
+      @JsonKey(name: 'string_match') required final String stringMatch,
+      required final bool enabled,
+      required final bool published,
+      @JsonKey(name: 'disabled_locations')
+      required final List<String> disabledLocations,
+      required final List<String> recipients,
+      @JsonKey(name: 'last_check_at') required final DateTime lastCheckAt,
+      @JsonKey(name: 'next_check_at') required final DateTime nextCheckAt,
+      @JsonKey(name: 'created_at') required final DateTime createdAt,
+      @JsonKey(name: 'mute_until') required final String muteUntil,
+      @JsonKey(name: 'favicon_url') required final String faviconUrl,
+      required final InvidiousSSL ssl}) = _$InvidiousMonitorImpl;
+
+  factory _InvidiousMonitor.fromJson(Map<String, dynamic> json) =
+      _$InvidiousMonitorImpl.fromJson;
+
+  @override
+  String get token;
+  @override
+  String get url;
+  @override
+  String get alias;
+  @override
+  @JsonKey(name: 'last_status')
+  int get lastStatus;
+  @override
+  double get uptime;
+  @override
+  bool get down;
+  @override
+  @JsonKey(name: 'down_since')
+  DateTime? get downSince;
+  @override
+  @JsonKey(name: 'up_since')
+  DateTime get upSince;
+  @override
+  String? get error;
+  @override
+  int get period;
+  @override
+  @JsonKey(name: 'apdex_t')
+  int get apdexT;
+  @override
+  @JsonKey(name: 'string_match')
+  String get stringMatch;
+  @override
+  bool get enabled;
+  @override
+  bool get published;
+  @override
+  @JsonKey(name: 'disabled_locations')
+  List<String> get disabledLocations;
+  @override
+  List<String> get recipients;
+  @override
+  @JsonKey(name: 'last_check_at')
+  DateTime get lastCheckAt;
+  @override
+  @JsonKey(name: 'next_check_at')
+  DateTime get nextCheckAt;
+  @override
+  @JsonKey(name: 'created_at')
+  DateTime get createdAt;
+  @override
+  @JsonKey(name: 'mute_until')
+  String get muteUntil;
+  @override
+  @JsonKey(name: 'favicon_url')
+  String get faviconUrl;
+  @override
+  InvidiousSSL get ssl;
+
+  /// Create a copy of InvidiousMonitor
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousMonitorImplCopyWith<_$InvidiousMonitorImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+InvidiousSSL _$InvidiousSSLFromJson(Map<String, dynamic> json) {
+  return _InvidiousSSL.fromJson(json);
+}
+
+/// @nodoc
+mixin _$InvidiousSSL {
+  @JsonKey(name: 'tested_at')
+  DateTime get testedAt => throw _privateConstructorUsedError;
+  @JsonKey(name: 'expires_at')
+  DateTime get expiresAt => throw _privateConstructorUsedError;
+  bool get valid => throw _privateConstructorUsedError;
+  String? get error => throw _privateConstructorUsedError;
+
+  /// Serializes this InvidiousSSL to a JSON map.
+  Map<String, dynamic> toJson() => throw _privateConstructorUsedError;
+
+  /// Create a copy of InvidiousSSL
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  $InvidiousSSLCopyWith<InvidiousSSL> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class $InvidiousSSLCopyWith<$Res> {
+  factory $InvidiousSSLCopyWith(
+          InvidiousSSL value, $Res Function(InvidiousSSL) then) =
+      _$InvidiousSSLCopyWithImpl<$Res, InvidiousSSL>;
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'tested_at') DateTime testedAt,
+      @JsonKey(name: 'expires_at') DateTime expiresAt,
+      bool valid,
+      String? error});
+}
+
+/// @nodoc
+class _$InvidiousSSLCopyWithImpl<$Res, $Val extends InvidiousSSL>
+    implements $InvidiousSSLCopyWith<$Res> {
+  _$InvidiousSSLCopyWithImpl(this._value, this._then);
+
+  // ignore: unused_field
+  final $Val _value;
+  // ignore: unused_field
+  final $Res Function($Val) _then;
+
+  /// Create a copy of InvidiousSSL
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? testedAt = null,
+    Object? expiresAt = null,
+    Object? valid = null,
+    Object? error = freezed,
+  }) {
+    return _then(_value.copyWith(
+      testedAt: null == testedAt
+          ? _value.testedAt
+          : testedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      expiresAt: null == expiresAt
+          ? _value.expiresAt
+          : expiresAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      valid: null == valid
+          ? _value.valid
+          : valid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ) as $Val);
+  }
+}
+
+/// @nodoc
+abstract class _$$InvidiousSSLImplCopyWith<$Res>
+    implements $InvidiousSSLCopyWith<$Res> {
+  factory _$$InvidiousSSLImplCopyWith(
+          _$InvidiousSSLImpl value, $Res Function(_$InvidiousSSLImpl) then) =
+      __$$InvidiousSSLImplCopyWithImpl<$Res>;
+  @override
+  @useResult
+  $Res call(
+      {@JsonKey(name: 'tested_at') DateTime testedAt,
+      @JsonKey(name: 'expires_at') DateTime expiresAt,
+      bool valid,
+      String? error});
+}
+
+/// @nodoc
+class __$$InvidiousSSLImplCopyWithImpl<$Res>
+    extends _$InvidiousSSLCopyWithImpl<$Res, _$InvidiousSSLImpl>
+    implements _$$InvidiousSSLImplCopyWith<$Res> {
+  __$$InvidiousSSLImplCopyWithImpl(
+      _$InvidiousSSLImpl _value, $Res Function(_$InvidiousSSLImpl) _then)
+      : super(_value, _then);
+
+  /// Create a copy of InvidiousSSL
+  /// with the given fields replaced by the non-null parameter values.
+  @pragma('vm:prefer-inline')
+  @override
+  $Res call({
+    Object? testedAt = null,
+    Object? expiresAt = null,
+    Object? valid = null,
+    Object? error = freezed,
+  }) {
+    return _then(_$InvidiousSSLImpl(
+      testedAt: null == testedAt
+          ? _value.testedAt
+          : testedAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      expiresAt: null == expiresAt
+          ? _value.expiresAt
+          : expiresAt // ignore: cast_nullable_to_non_nullable
+              as DateTime,
+      valid: null == valid
+          ? _value.valid
+          : valid // ignore: cast_nullable_to_non_nullable
+              as bool,
+      error: freezed == error
+          ? _value.error
+          : error // ignore: cast_nullable_to_non_nullable
+              as String?,
+    ));
+  }
+}
+
+/// @nodoc
+@JsonSerializable()
+class _$InvidiousSSLImpl implements _InvidiousSSL {
+  const _$InvidiousSSLImpl(
+      {@JsonKey(name: 'tested_at') required this.testedAt,
+      @JsonKey(name: 'expires_at') required this.expiresAt,
+      required this.valid,
+      this.error});
+
+  factory _$InvidiousSSLImpl.fromJson(Map<String, dynamic> json) =>
+      _$$InvidiousSSLImplFromJson(json);
+
+  @override
+  @JsonKey(name: 'tested_at')
+  final DateTime testedAt;
+  @override
+  @JsonKey(name: 'expires_at')
+  final DateTime expiresAt;
+  @override
+  final bool valid;
+  @override
+  final String? error;
+
+  @override
+  String toString() {
+    return 'InvidiousSSL(testedAt: $testedAt, expiresAt: $expiresAt, valid: $valid, error: $error)';
+  }
+
+  @override
+  bool operator ==(Object other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType &&
+            other is _$InvidiousSSLImpl &&
+            (identical(other.testedAt, testedAt) ||
+                other.testedAt == testedAt) &&
+            (identical(other.expiresAt, expiresAt) ||
+                other.expiresAt == expiresAt) &&
+            (identical(other.valid, valid) || other.valid == valid) &&
+            (identical(other.error, error) || other.error == error));
+  }
+
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  int get hashCode =>
+      Object.hash(runtimeType, testedAt, expiresAt, valid, error);
+
+  /// Create a copy of InvidiousSSL
+  /// with the given fields replaced by the non-null parameter values.
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  @override
+  @pragma('vm:prefer-inline')
+  _$$InvidiousSSLImplCopyWith<_$InvidiousSSLImpl> get copyWith =>
+      __$$InvidiousSSLImplCopyWithImpl<_$InvidiousSSLImpl>(this, _$identity);
+
+  @override
+  Map<String, dynamic> toJson() {
+    return _$$InvidiousSSLImplToJson(
+      this,
+    );
+  }
+}
+
+abstract class _InvidiousSSL implements InvidiousSSL {
+  const factory _InvidiousSSL(
+      {@JsonKey(name: 'tested_at') required final DateTime testedAt,
+      @JsonKey(name: 'expires_at') required final DateTime expiresAt,
+      required final bool valid,
+      final String? error}) = _$InvidiousSSLImpl;
+
+  factory _InvidiousSSL.fromJson(Map<String, dynamic> json) =
+      _$InvidiousSSLImpl.fromJson;
+
+  @override
+  @JsonKey(name: 'tested_at')
+  DateTime get testedAt;
+  @override
+  @JsonKey(name: 'expires_at')
+  DateTime get expiresAt;
+  @override
+  bool get valid;
+  @override
+  String? get error;
+
+  /// Create a copy of InvidiousSSL
+  /// with the given fields replaced by the non-null parameter values.
+  @override
+  @JsonKey(includeFromJson: false, includeToJson: false)
+  _$$InvidiousSSLImplCopyWith<_$InvidiousSSLImpl> get copyWith =>
+      throw _privateConstructorUsedError;
+}
+
 InvidiousMixResponse _$InvidiousMixResponseFromJson(Map<String, dynamic> json) {
   return _InvidiousMixResponse.fromJson(json);
 }
