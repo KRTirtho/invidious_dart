@@ -20,7 +20,7 @@ class SearchEndpoint extends Endpoint {
     InvidiousSearchDuration? duration,
     InvidiousSearchType type = InvidiousSearchType.all,
     Set<InvidiousSearchFeatures>? features,
-    String region = 'US',
+    String? region,
   }) async {
     final response = await dio.get('/search', queryParameters: {
       'q': query,
@@ -30,7 +30,7 @@ class SearchEndpoint extends Endpoint {
       if (duration != null) 'duration': duration.name,
       'type': type.name,
       if (features != null) 'features': features.map((e) => e.value).join(','),
-      'region': region,
+      if (region != null) "region": region,
     });
 
     return (response.data as List)

@@ -6,11 +6,11 @@ class BrowsEndpoint extends Endpoint {
 
   Future<List<InvidiousTrendingVideo>> trending({
     InvidiousTrendingVideoType type = InvidiousTrendingVideoType.defaultType,
-    String region = "US",
+    String? region,
   }) async {
     final response = await dio.get('/trending', queryParameters: {
       "type": type.value,
-      "region": region,
+      if (region != null) "region": region,
     });
     return (response.data as List)
         .map((e) => InvidiousTrendingVideo.fromJson(e))

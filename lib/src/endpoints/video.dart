@@ -7,10 +7,12 @@ class VideoEndpoint extends Endpoint {
 
   Future<InvidiousVideoResponse> get(
     String videoId, {
-    String region = "US",
+    String? region,
+    bool? local,
   }) async {
     final response = await dio.get('/videos/$videoId', queryParameters: {
-      "region": region,
+      if (region != null) "region": region,
+      if (local != null) "local": local ? 1 : 0,
     });
     return InvidiousVideoResponse.fromJson(response.data);
   }
@@ -33,14 +35,14 @@ class VideoEndpoint extends Endpoint {
     String videoId, {
     String? lang,
     String? tlang,
-    String region = "US",
+    String? region,
   }) async {
     final response = await dio.get(
       '/captions/$videoId',
       queryParameters: {
         if (lang != null) "lang": lang,
         if (tlang != null) "tlang": tlang,
-        "region": region,
+        if (region != null) "region": region,
       },
     );
     return InvidiousCaptionResponse.fromJson(response.data);
@@ -50,14 +52,14 @@ class VideoEndpoint extends Endpoint {
     String videoId, {
     required String lang,
     String? tlang,
-    String region = "US",
+    String? region,
   }) async {
     final response = await dio.get(
       '/captions/$videoId',
       queryParameters: {
         "lang": lang,
         if (tlang != null) "tlang": tlang,
-        "region": region,
+        if (region != null) "region": region,
       },
       options: Options(responseType: ResponseType.plain),
     );
