@@ -1,6 +1,7 @@
 name: invidious
 description: Invidious API client for Dart and Flutter.
 version: 0.1.0
+repository: https://github.com/KRTirtho/invidious_dart
 
 environment:
   sdk: ^3.5.3
