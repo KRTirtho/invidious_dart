@@ -79,8 +79,8 @@ class InvidiousVideoResponseAdaptiveFormat
     required String clen,
     required String lmt,
     required String projectionType,
-    required String container,
-    required String encoding,
+    String? container,
+    String? encoding,
     String? qualityLabel,
     String? resolution,
   }) = _InvidiousVideoResponseAdaptiveFormat;
@@ -114,7 +114,7 @@ class InvidiousVideoResponseFormatStream
 class InvidiousVideoResponseCaption with _$InvidiousVideoResponseCaption {
   const factory InvidiousVideoResponseCaption({
     required String label,
-    required String languageCode,
+    @JsonKey(name: 'language_code') required String languageCode,
     required String url,
   }) = _InvidiousVideoResponseCaption;
 

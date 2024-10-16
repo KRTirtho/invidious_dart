@@ -12238,8 +12238,8 @@ mixin _$InvidiousVideoResponseAdaptiveFormat {
   String get clen => throw _privateConstructorUsedError;
   String get lmt => throw _privateConstructorUsedError;
   String get projectionType => throw _privateConstructorUsedError;
-  String get container => throw _privateConstructorUsedError;
-  String get encoding => throw _privateConstructorUsedError;
+  String? get container => throw _privateConstructorUsedError;
+  String? get encoding => throw _privateConstructorUsedError;
   String? get qualityLabel => throw _privateConstructorUsedError;
   String? get resolution => throw _privateConstructorUsedError;
 
@@ -12272,8 +12272,8 @@ abstract class $InvidiousVideoResponseAdaptiveFormatCopyWith<$Res> {
       String clen,
       String lmt,
       String projectionType,
-      String container,
-      String encoding,
+      String? container,
+      String? encoding,
       String? qualityLabel,
       String? resolution});
 }
@@ -12303,8 +12303,8 @@ class _$InvidiousVideoResponseAdaptiveFormatCopyWithImpl<$Res,
     Object? clen = null,
     Object? lmt = null,
     Object? projectionType = null,
-    Object? container = null,
-    Object? encoding = null,
+    Object? container = freezed,
+    Object? encoding = freezed,
     Object? qualityLabel = freezed,
     Object? resolution = freezed,
   }) {
@@ -12345,14 +12345,14 @@ class _$InvidiousVideoResponseAdaptiveFormatCopyWithImpl<$Res,
           ? _value.projectionType
           : projectionType // ignore: cast_nullable_to_non_nullable
               as String,
-      container: null == container
+      container: freezed == container
           ? _value.container
           : container // ignore: cast_nullable_to_non_nullable
-              as String,
-      encoding: null == encoding
+              as String?,
+      encoding: freezed == encoding
           ? _value.encoding
           : encoding // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       qualityLabel: freezed == qualityLabel
           ? _value.qualityLabel
           : qualityLabel // ignore: cast_nullable_to_non_nullable
@@ -12384,8 +12384,8 @@ abstract class _$$InvidiousVideoResponseAdaptiveFormatImplCopyWith<$Res>
       String clen,
       String lmt,
       String projectionType,
-      String container,
-      String encoding,
+      String? container,
+      String? encoding,
       String? qualityLabel,
       String? resolution});
 }
@@ -12414,8 +12414,8 @@ class __$$InvidiousVideoResponseAdaptiveFormatImplCopyWithImpl<$Res>
     Object? clen = null,
     Object? lmt = null,
     Object? projectionType = null,
-    Object? container = null,
-    Object? encoding = null,
+    Object? container = freezed,
+    Object? encoding = freezed,
     Object? qualityLabel = freezed,
     Object? resolution = freezed,
   }) {
@@ -12456,14 +12456,14 @@ class __$$InvidiousVideoResponseAdaptiveFormatImplCopyWithImpl<$Res>
           ? _value.projectionType
           : projectionType // ignore: cast_nullable_to_non_nullable
               as String,
-      container: null == container
+      container: freezed == container
           ? _value.container
           : container // ignore: cast_nullable_to_non_nullable
-              as String,
-      encoding: null == encoding
+              as String?,
+      encoding: freezed == encoding
           ? _value.encoding
           : encoding // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       qualityLabel: freezed == qualityLabel
           ? _value.qualityLabel
           : qualityLabel // ignore: cast_nullable_to_non_nullable
@@ -12490,8 +12490,8 @@ class _$InvidiousVideoResponseAdaptiveFormatImpl
       required this.clen,
       required this.lmt,
       required this.projectionType,
-      required this.container,
-      required this.encoding,
+      this.container,
+      this.encoding,
       this.qualityLabel,
       this.resolution});
 
@@ -12518,9 +12518,9 @@ class _$InvidiousVideoResponseAdaptiveFormatImpl
   @override
   final String projectionType;
   @override
-  final String container;
+  final String? container;
   @override
-  final String encoding;
+  final String? encoding;
   @override
   final String? qualityLabel;
   @override
@@ -12604,8 +12604,8 @@ abstract class _InvidiousVideoResponseAdaptiveFormat
       required final String clen,
       required final String lmt,
       required final String projectionType,
-      required final String container,
-      required final String encoding,
+      final String? container,
+      final String? encoding,
       final String? qualityLabel,
       final String? resolution}) = _$InvidiousVideoResponseAdaptiveFormatImpl;
 
@@ -12632,9 +12632,9 @@ abstract class _InvidiousVideoResponseAdaptiveFormat
   @override
   String get projectionType;
   @override
-  String get container;
+  String? get container;
   @override
-  String get encoding;
+  String? get encoding;
   @override
   String? get qualityLabel;
   @override
@@ -12990,6 +12990,7 @@ InvidiousVideoResponseCaption _$InvidiousVideoResponseCaptionFromJson(
 /// @nodoc
 mixin _$InvidiousVideoResponseCaption {
   String get label => throw _privateConstructorUsedError;
+  @JsonKey(name: 'language_code')
   String get languageCode => throw _privateConstructorUsedError;
   String get url => throw _privateConstructorUsedError;
 
@@ -13011,7 +13012,10 @@ abstract class $InvidiousVideoResponseCaptionCopyWith<$Res> {
       _$InvidiousVideoResponseCaptionCopyWithImpl<$Res,
           InvidiousVideoResponseCaption>;
   @useResult
-  $Res call({String label, String languageCode, String url});
+  $Res call(
+      {String label,
+      @JsonKey(name: 'language_code') String languageCode,
+      String url});
 }
 
 /// @nodoc
@@ -13060,7 +13064,10 @@ abstract class _$$InvidiousVideoResponseCaptionImplCopyWith<$Res>
       __$$InvidiousVideoResponseCaptionImplCopyWithImpl<$Res>;
   @override
   @useResult
-  $Res call({String label, String languageCode, String url});
+  $Res call(
+      {String label,
+      @JsonKey(name: 'language_code') String languageCode,
+      String url});
 }
 
 /// @nodoc
@@ -13104,7 +13111,9 @@ class __$$InvidiousVideoResponseCaptionImplCopyWithImpl<$Res>
 class _$InvidiousVideoResponseCaptionImpl
     implements _InvidiousVideoResponseCaption {
   const _$InvidiousVideoResponseCaptionImpl(
-      {required this.label, required this.languageCode, required this.url});
+      {required this.label,
+      @JsonKey(name: 'language_code') required this.languageCode,
+      required this.url});
 
   factory _$InvidiousVideoResponseCaptionImpl.fromJson(
           Map<String, dynamic> json) =>
@@ -13113,6 +13122,7 @@ class _$InvidiousVideoResponseCaptionImpl
   @override
   final String label;
   @override
+  @JsonKey(name: 'language_code')
   final String languageCode;
   @override
   final String url;
@@ -13159,7 +13169,7 @@ abstract class _InvidiousVideoResponseCaption
     implements InvidiousVideoResponseCaption {
   const factory _InvidiousVideoResponseCaption(
       {required final String label,
-      required final String languageCode,
+      @JsonKey(name: 'language_code') required final String languageCode,
       required final String url}) = _$InvidiousVideoResponseCaptionImpl;
 
   factory _InvidiousVideoResponseCaption.fromJson(Map<String, dynamic> json) =
@@ -13168,6 +13178,7 @@ abstract class _InvidiousVideoResponseCaption
   @override
   String get label;
   @override
+  @JsonKey(name: 'language_code')
   String get languageCode;
   @override
   String get url;

@@ -1055,8 +1055,8 @@ _$InvidiousVideoResponseAdaptiveFormatImpl
           clen: json['clen'] as String,
           lmt: json['lmt'] as String,
           projectionType: json['projectionType'] as String,
-          container: json['container'] as String,
-          encoding: json['encoding'] as String,
+          container: json['container'] as String?,
+          encoding: json['encoding'] as String?,
           qualityLabel: json['qualityLabel'] as String?,
           resolution: json['resolution'] as String?,
         );
@@ -1112,7 +1112,7 @@ _$InvidiousVideoResponseCaptionImpl
     _$$InvidiousVideoResponseCaptionImplFromJson(Map<String, dynamic> json) =>
         _$InvidiousVideoResponseCaptionImpl(
           label: json['label'] as String,
-          languageCode: json['languageCode'] as String,
+          languageCode: json['language_code'] as String,
           url: json['url'] as String,
         );
 
@@ -1120,7 +1120,7 @@ Map<String, dynamic> _$$InvidiousVideoResponseCaptionImplToJson(
         _$InvidiousVideoResponseCaptionImpl instance) =>
     <String, dynamic>{
       'label': instance.label,
-      'languageCode': instance.languageCode,
+      'language_code': instance.languageCode,
       'url': instance.url,
     };
 
