@@ -1,3 +1,8 @@
-## 1.0.0
+## 0.1.0
 
-- Initial version.
+## Changes
+
+**Features**
+
+- add instances endpoint
+- implemented non-authenticated api endpoints
