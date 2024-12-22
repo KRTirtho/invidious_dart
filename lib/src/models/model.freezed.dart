@@ -5340,7 +5340,7 @@ mixin _$InvidiousMonitor {
   @JsonKey(name: 'created_at')
   DateTime get createdAt => throw _privateConstructorUsedError;
   @JsonKey(name: 'mute_until')
-  String get muteUntil => throw _privateConstructorUsedError;
+  String? get muteUntil => throw _privateConstructorUsedError;
   @JsonKey(name: 'favicon_url')
   String get faviconUrl => throw _privateConstructorUsedError;
   InvidiousSSL get ssl => throw _privateConstructorUsedError;
@@ -5381,7 +5381,7 @@ abstract class $InvidiousMonitorCopyWith<$Res> {
       @JsonKey(name: 'last_check_at') DateTime lastCheckAt,
       @JsonKey(name: 'next_check_at') DateTime nextCheckAt,
       @JsonKey(name: 'created_at') DateTime createdAt,
-      @JsonKey(name: 'mute_until') String muteUntil,
+      @JsonKey(name: 'mute_until') String? muteUntil,
       @JsonKey(name: 'favicon_url') String faviconUrl,
       InvidiousSSL ssl});
 
@@ -5422,7 +5422,7 @@ class _$InvidiousMonitorCopyWithImpl<$Res, $Val extends InvidiousMonitor>
     Object? lastCheckAt = null,
     Object? nextCheckAt = null,
     Object? createdAt = null,
-    Object? muteUntil = null,
+    Object? muteUntil = freezed,
     Object? faviconUrl = null,
     Object? ssl = null,
   }) {
@@ -5503,10 +5503,10 @@ class _$InvidiousMonitorCopyWithImpl<$Res, $Val extends InvidiousMonitor>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      muteUntil: null == muteUntil
+      muteUntil: freezed == muteUntil
           ? _value.muteUntil
           : muteUntil // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       faviconUrl: null == faviconUrl
           ? _value.faviconUrl
           : faviconUrl // ignore: cast_nullable_to_non_nullable
@@ -5557,7 +5557,7 @@ abstract class _$$InvidiousMonitorImplCopyWith<$Res>
       @JsonKey(name: 'last_check_at') DateTime lastCheckAt,
       @JsonKey(name: 'next_check_at') DateTime nextCheckAt,
       @JsonKey(name: 'created_at') DateTime createdAt,
-      @JsonKey(name: 'mute_until') String muteUntil,
+      @JsonKey(name: 'mute_until') String? muteUntil,
       @JsonKey(name: 'favicon_url') String faviconUrl,
       InvidiousSSL ssl});
 
@@ -5597,7 +5597,7 @@ class __$$InvidiousMonitorImplCopyWithImpl<$Res>
     Object? lastCheckAt = null,
     Object? nextCheckAt = null,
     Object? createdAt = null,
-    Object? muteUntil = null,
+    Object? muteUntil = freezed,
     Object? faviconUrl = null,
     Object? ssl = null,
   }) {
@@ -5678,10 +5678,10 @@ class __$$InvidiousMonitorImplCopyWithImpl<$Res>
           ? _value.createdAt
           : createdAt // ignore: cast_nullable_to_non_nullable
               as DateTime,
-      muteUntil: null == muteUntil
+      muteUntil: freezed == muteUntil
           ? _value.muteUntil
           : muteUntil // ignore: cast_nullable_to_non_nullable
-              as String,
+              as String?,
       faviconUrl: null == faviconUrl
           ? _value.faviconUrl
           : faviconUrl // ignore: cast_nullable_to_non_nullable
@@ -5718,7 +5718,7 @@ class _$InvidiousMonitorImpl implements _InvidiousMonitor {
       @JsonKey(name: 'last_check_at') required this.lastCheckAt,
       @JsonKey(name: 'next_check_at') required this.nextCheckAt,
       @JsonKey(name: 'created_at') required this.createdAt,
-      @JsonKey(name: 'mute_until') required this.muteUntil,
+      @JsonKey(name: 'mute_until') this.muteUntil,
       @JsonKey(name: 'favicon_url') required this.faviconUrl,
       required this.ssl})
       : _disabledLocations = disabledLocations,
@@ -5789,7 +5789,7 @@ class _$InvidiousMonitorImpl implements _InvidiousMonitor {
   final DateTime createdAt;
   @override
   @JsonKey(name: 'mute_until')
-  final String muteUntil;
+  final String? muteUntil;
   @override
   @JsonKey(name: 'favicon_url')
   final String faviconUrl;
@@ -5908,7 +5908,7 @@ abstract class _InvidiousMonitor implements InvidiousMonitor {
       @JsonKey(name: 'last_check_at') required final DateTime lastCheckAt,
       @JsonKey(name: 'next_check_at') required final DateTime nextCheckAt,
       @JsonKey(name: 'created_at') required final DateTime createdAt,
-      @JsonKey(name: 'mute_until') required final String muteUntil,
+      @JsonKey(name: 'mute_until') final String? muteUntil,
       @JsonKey(name: 'favicon_url') required final String faviconUrl,
       required final InvidiousSSL ssl}) = _$InvidiousMonitorImpl;
 
@@ -5964,7 +5964,7 @@ abstract class _InvidiousMonitor implements InvidiousMonitor {
   DateTime get createdAt;
   @override
   @JsonKey(name: 'mute_until')
-  String get muteUntil;
+  String? get muteUntil;
   @override
   @JsonKey(name: 'favicon_url')
   String get faviconUrl;

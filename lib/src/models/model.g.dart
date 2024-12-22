@@ -490,7 +490,7 @@ _$InvidiousMonitorImpl _$$InvidiousMonitorImplFromJson(
       lastCheckAt: DateTime.parse(json['last_check_at'] as String),
       nextCheckAt: DateTime.parse(json['next_check_at'] as String),
       createdAt: DateTime.parse(json['created_at'] as String),
-      muteUntil: json['mute_until'] as String,
+      muteUntil: json['mute_until'] as String?,
       faviconUrl: json['favicon_url'] as String,
       ssl: InvidiousSSL.fromJson(json['ssl'] as Map<String, dynamic>),
     );

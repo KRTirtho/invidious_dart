@@ -119,7 +119,7 @@ class InvidiousMonitor with _$InvidiousMonitor {
     @JsonKey(name: 'last_check_at') required DateTime lastCheckAt,
     @JsonKey(name: 'next_check_at') required DateTime nextCheckAt,
     @JsonKey(name: 'created_at') required DateTime createdAt,
-    @JsonKey(name: 'mute_until') required String muteUntil,
+    @JsonKey(name: 'mute_until') String? muteUntil,
     @JsonKey(name: 'favicon_url') required String faviconUrl,
     required InvidiousSSL ssl,
   }) = _InvidiousMonitor;
